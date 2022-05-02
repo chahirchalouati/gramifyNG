@@ -3,9 +3,6 @@ import {HttpEvent, HttpHandler, HttpInterceptor, HttpRequest} from "@angular/com
 import {environment} from "../../environments/environment";
 import {Observable} from "rxjs";
 
-@Injectable({
-  providedIn: 'root'
-})
 @Injectable()
 export class APIInterceptor implements HttpInterceptor {
   baseUrl: string = environment.apiUrl;
